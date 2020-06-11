@@ -1,0 +1,338 @@
+.navbar
+{background:rgba(35, 65, 92, 0.418);font-size:1.2em;width:100%;-webkit-transition: all .4s ease-in; transition:all .4s ease-in;}
+
+.navbar .container-fluid
+{padding:0 0.5rem !important;}
+
+.navbar-brand img
+{max-width:80px;}
+
+.navbar-default .navbar-nav li a
+{color:#d5d5d5;}
+
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active
+{color:#fff;}
+
+.navbar .navbar-social-media
+{margin-right:100px;display:none;float:right !important;}
+
+.navbar .navbar-social-media a
+{color:#fff;margin-right:3rem;-webkit-transition: all .2s ease-in; transition:all .2s ease-in;}
+
+.navbar .navbar-social-media a i
+{font-size:1.5rem;}
+
+div.menu-primary-menu-container
+{top:30%;right:30%;position:absolute;}
+
+.main-nav a
+{transition:all .2s ease-in;}
+
+.main-nav a:hover
+{color:#53A3DE;}
+
+footer div.menu-primary-menu-container ul li
+{margin-bottom:1rem;font-size:1.4rem !important;}
+
+footer div.menu-primary-menu-container ul li a
+{font-size:1.4rem !important;}
+
+@media (min-width: 768px) { 
+div.menu-primary-menu-container
+{right:40%;}
+}
+
+@media (min-width: 992px) { 
+div.menu-primary-menu-container
+{right:43%;}
+}
+
+footer div.menu-primary-menu-container
+{position:static;}
+
+footer div.menu-primary-menu-container ul
+{list-style:none;margin: 0;padding: 0;}
+
+footer div.menu-primary-menu-container ul li
+{margin-bottom:1rem;}
+
+footer div.menu-primary-menu-container ul li:last-child
+{margin-bottom:0;}
+
+@media (min-width: 992px) { 
+div.menu-primary-menu-container ul li
+{margin-bottom:1rem;font-size:1.5rem;}
+
+footer div.menu-primary-menu-container ul li
+{margin-bottom:1rem;font-size:1.2rem;}
+
+footer div.menu-primary-menu-container
+{position:relative;left:0;top:25%;}
+ }
+
+
+@media (min-width: 576px) { 
+
+.navbar .navbar-social-media a i
+{font-size:1.5rem;}  
+
+.navbar .navbar-social-media a
+{margin-right:2.5rem;}
+
+.navbar .navbar-social-media
+{display:block;}
+
+.navbar .navbar-social-media
+{margin-right:100px;}
+}
+
+.navbar .navbar-social-media a:last-child
+{margin-right:0;}
+
+/* Main menu positionning */
+
+nav div.menu 
+{height:100%;}
+
+.main-nav {
+	font-family: 'Comfortaa Regular', sans-serif !important;
+	letter-spacing:1px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(42, 70, 94, .5);
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+    transition: all .375s;
+    text-transform: uppercase;
+}
+
+.main-nav.is-open {
+    opacity: 1;
+    z-index: 100;
+	visibility: visible;
+}
+
+/* Yellow band effect */
+.main-nav::before {
+	 content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px;
+    background: rgba(42, 70, 94, .9);
+    transform-origin: 0 0;
+    transform: skew(-14deg) translateX(-120%);
+    transition: all .275s .1s;
+}
+
+.main-nav.is-open::before {
+    transform: skew(-14deg) translateX(0);
+}
+
+/* Skewing effect on menu links */
+.main-nav ul {
+    display: inline-flex;
+    flex-direction: column;
+    height: 93%; /* Should be 100%, but we have a notice message :D */
+    align-items: flex-end;
+    justify-content: center;
+    transform: translateX(-18%) skew(-16deg);
+}
+
+.main-nav li {
+    display: block;
+    margin: .5rem 0;
+    text-align: right;
+	transform: skew(16deg);
+	font-family: 'Comfortaa Regular', sans-serif;
+}
+
+/* Apparition effect on links */
+.main-nav a {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.main-nav.is-open a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.main-nav li:nth-child(1) a {
+	transition: all 275ms 175ms
+}
+.main-nav li:nth-child(2) a {
+	transition: all 275ms 225ms
+}
+.main-nav li:nth-child(3) a {
+	transition: all 275ms 275ms
+}
+.main-nav li:nth-child(4) a {
+	transition: all 275ms 325ms
+}
+.main-nav li:nth-child(5) a {
+	transition: all 275ms 375ms
+}
+
+/* Decoration */
+.main-nav ul,
+.main-nav li {
+	list-style: none;
+	padding: 0;
+}
+
+
+.main-nav a {
+	display: block;
+	padding: 12px 0;
+	color: #fff;
+    font-size: 1.4em;
+    line-height: 1.4em;
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 360px) {
+    .main-nav a {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+}
+
+.open-main-nav {
+	position: absolute;
+	top: 44px;
+	right: 46px;
+	z-index: 1000;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+@media (min-width:992px) {
+.open-main-nav {
+	right: 49px;
+}
+}
+
+.open-main-nav:focus {
+	outline: none;
+}
+.burger {
+position: fixed;
+	display: block;
+	width: 32px;
+	height: 4px;
+	margin: 0 auto;
+	background: #fff;
+    -webkit-box-shadow: -2px 3px 43px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 3px 43px 4px rgba(0,0,0,0.75);
+    box-shadow: -2px 3px 43px 4px rgba(0,0,0,0.75);
+	transition: all .2s ease-in;
+}
+
+.burger:after,
+.burger:before {
+	content: '';
+    display: block;
+	height: 100%;
+	background: #fff;
+	transition: all .275s;
+}
+
+.burger:after {
+    transform: translateY(-14px);
+}
+
+.burger:before {
+	transform: translateY(-20px);
+}
+
+/* Toggle State part */
+.is-open .burger {
+	transform: skew(5deg) translateY(-8px) rotate(-42deg);
+}
+
+.is-open .burger:before {
+	transform: translateY(0px) skew(-10deg) rotate(75deg);
+}
+
+.is-open .burger:after {
+	transform: translateY(-12px) translateX(10px) skew(-20deg);
+    opacity: 0;
+}
+
+/* MENU Text part */
+
+.burger-text {
+	display: block;
+	font-size: .675rem;
+	letter-spacing: .05em;
+	margin-top: .5em;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+}
+
+/* Slow motion button */
+[id="slowmo"] {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 10px;
+	border: 0;
+	font-size: 1rem;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .275s;
+}
+
+[id="slowmo"] span {
+	display: block;
+	font-weight: normal;
+}
+
+[id="slowmo"]:hover,
+[id="slowmo"]:focus {
+	background: #fff;
+}
+
+[id="slowmo"].is-slowmo span:after {
+	content: 'Activated';
+	display: block;
+	font-weight: bold;
+}
+
+/* When slowmotion is activated */
+
+.is-slowmo + .device .open-main-nav .burger,
+.is-slowmo + .device .open-main-nav .burger:before,
+.is-slowmo + .device .open-main-nav .burger:after,
+.is-slowmo + .device .main-nav,
+.is-slowmo + .device .main-nav::before,
+.is-slowmo + .device .main-nav a {
+	transition-duration: 3s;
+}
+.is-slowmo + .device .main-nav li:nth-child(1) a {
+	transition-delay: 1750ms
+}
+.is-slowmo + .device .main-nav li:nth-child(2) a {
+	transition-delay: 2250ms
+}
+.is-slowmo + .device .main-nav li:nth-child(3) a {
+	transition-delay: 2750ms
+}
+.is-slowmo + .device .main-nav li:nth-child(4) a {
+	transition-delay: 3250ms
+}
+.is-slowmo + .device .main-nav li:nth-child(5) a {
+	transition-delay: 3750ms
+}
+
+

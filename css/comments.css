@@ -1,0 +1,59 @@
+.comments 
+{padding:10px;margin-bottom:20px;margin-top:10px;}
+
+.comments li
+{display:block !important;}
+
+.comments h3,.comments h2
+{padding:5px}
+
+.comment-body
+{background:#fff;border-radius:0.3rem;margin-bottom:10px;padding:20px 10px;}
+
+.comment-meta
+{background:none;color:#2A465E !important;padding:10px;overflow:auto;margin-bottom:15px;}
+
+.comment-metadata a
+{color:#2A465E !important;}
+
+.comment-meta
+{font-family:'Comfortaa Regular',sans-serif;letter-spacing:0.8px;}
+
+.comment-meta .comment-form
+{color:#00acee !important;}
+
+.comment-meta a
+{color:#fff;}
+
+.comment-meta a.url 
+{color:#2A465E;}
+
+.comment-meta img
+{float:left;margin-right:10px;width:66px !important;}
+
+.comment-respond
+{margin-top:1rem;}
+
+.comment-reply-link
+{background:#2A465E;color:#fff !important;text-decoration:none !important;border-radius:0.3rem;display:inline-block;padding:10px 15px;}
+
+.comment-meta a
+{text-decoration:none;}
+
+.comment-edit-link
+{color:#00acee !important;text-decoration:underline !important;}
+
+.comment-form input, .comment-form textarea
+{width:100%;padding:4px;border:#ccc solid 1px;margin-bottom:15px;}
+
+.comment-form #submit
+{font-family:'Comfortaa Regular',sans-serif;letter-spacing:0.8px;font-size:16px;text-transform:uppercase;color:#2A465E !important;background:#F5CB65;}
+
+.comment-form-comment
+{margin-bottom:0;}
+
+.comment-form-comment textarea
+{height:20vh;}
+
+.comment-respond form label, .comment-respond form input
+{height:auto !important;margin-bottom:0 !important;}

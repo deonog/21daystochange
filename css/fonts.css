@@ -1,0 +1,33 @@
+/* Comfortaa */
+
+@font-face {
+    font-family: 'Comfortaa Light';
+    src: url('../fonts/comfortaa/Comfortaa-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Comfortaa Regular';
+    src: url('../fonts/comfortaa/Comfortaa-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Comfortaa Bold';
+    src: url('../fonts/comfortaa/Comfortaa-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+/* Nunito Sans */
+
+@font-face {
+    font-family: 'Nunito Sans Light';
+    src: url('../fonts/nunito-sans/NunitoSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Nunito Sans Light Italic';
+    src: url('../fonts/nunito-sans/NunitoSans-LightItalic.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Nunito Sans Regular';
+    src: url('../fonts/nunito-sans/NunitoSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}

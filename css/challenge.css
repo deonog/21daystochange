@@ -1,0 +1,145 @@
+.challenge .padding
+{padding-top:3.5rem;}
+
+.challenge h2
+{margin-bottom:0.5rem;}
+
+.challenge #info a
+{text-decoration:none;color:#F5CB65;}
+
+.challenge #info .container, .challenge #cta .container, .challenge #cta-2 .container
+{padding-bottom: 3.5rem;}
+
+.challenge header
+{background:url('../assets/img/landing-img.png') no-repeat center center;height:45vh;position:relative;width:100%;background-size:cover;padding:0;}
+
+.challenge #info
+{background:#24455E;color:#fff;}
+
+.challenge #info div.row div.col-lg-6:first-child
+{margin-bottom:2.5rem;}
+
+.challenge .accordion-heading
+{height:80px;}
+
+.challenge .accordion-heading h5
+{margin-right:4px;margin-bottom:0}
+
+.challenge div.accordion:first-child .accordion-heading
+{border-top-left-radius:0.3rem;border-top-right-radius:0.3rem;}
+
+.challenge div.accordion:last-child .accordion-heading
+{border-bottom-left-radius:0.3rem;border-bottom-right-radius:0.3rem;}
+
+.challenge .accordion-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 36px 12px 36px;
+    background: rgb(28, 62, 92);
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.challenge .accordion:nth-of-type(odd) .accordion-heading {
+    background: rgb(26, 58, 87);
+}
+
+.challenge .accordion-heading div {
+    display: flex;
+    flex-direction: column;
+}
+
+/** This class will hide all the body by default **/
+.challenge .accordion-content {
+    background: rgb(26, 58, 87);
+    padding: 28px 36px;
+    display : none;
+ }
+
+ /** This class will show the body if it has "active" parent class. "active" class will be added to panel div **/
+.accordion .accordion-active .accordion-content {
+    display : block;
+ }
+
+ /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.challenge .accordion-active, .accordion-heading:hover {
+    background: rgb(12, 27, 39) !important;
+}
+
+/* Main section */
+
+.challenge #main div
+{color:#24455E;}
+
+.challenge #main div
+{padding: 0;}
+
+.challenge #main img
+{width:100%;height:35vh;object-fit:cover;}
+
+.challenge #main div.row
+{height:100%;}
+
+.challenge #main div.text
+{display:flex;align-items:center;justify-content:center;}
+
+.challenge #main div.text2
+{display:flex;align-items:center;justify-content:center;}
+
+.challenge #main div.text div
+{padding:2rem 1rem 0 1rem;width:100%;margin:0 auto;}
+
+.challenge #main div.text2 div
+{padding: 0 1rem 2rem 1rem;width:100%;margin:0 auto;}
+
+/* CTA section */
+
+#cta
+{background:#24455E;color:#fff;}
+
+#cta-2
+{color:#24455E;}
+
+@media (min-width: 576px) {  
+.challenge #main img
+{height:40vh;}
+}
+
+@media (min-width: 768px) {  
+.challenge #main div.text div
+{padding:2rem 0;width:90%;margin:0 auto;}
+.challenge #main img
+{height:45vh;}
+}
+
+@media (min-width: 992px) { 
+
+.challenge header
+{background:url('../assets/img/landing-img.png') no-repeat center center fixed;}
+     
+.challenge #info div.row div.col-lg-6:first-child
+{margin-bottom:0;}
+
+.challenge #main div.text div
+{padding:0;width:96%;margin:0 auto;}
+
+.challenge #main div.text2 div
+{padding:0;width:96%;margin:0 auto;}
+
+.challenge #main img
+{height:40vh;}
+
+}
+
+@media (min-width: 1024px) {  
+.challenge #main div.text div
+{padding:0;width:80%;margin:0 auto;}
+
+.challenge #main div.text2 div
+{padding:0;width:80%;margin:0 auto;}
+
+
+.challenge #main img
+{height:50vh;}
+}

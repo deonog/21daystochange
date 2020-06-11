@@ -1,0 +1,28 @@
+.sidebar
+{color:#24455E;margin-top:4.5em;}
+
+.sidebar ul
+{list-style:none;padding:0;}
+
+.sidebar ul li
+{font-family:'Comfortaa Regular',sans-serif;background:#fff;padding:8px;margin-bottom:.75rem;border-radius:0.3rem}
+
+.sidebar ul li:last-child
+{margin-bottom:0;}
+
+.sidebar ul a 
+{text-decoration:none;color:#24455E;}
+
+.sidebar div.calendar_wrap
+{background:#fff;border-radius:0.3rem;}
+
+.sidebar div.calendar_wrap table
+{width:100%;}
+
+.sidebar .sidebar-module
+{margin-bottom:2rem;}
+
+@media screen and (min-width: 992px) { 
+.sidebar
+{margin-top:0;}
+}

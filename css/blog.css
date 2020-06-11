@@ -1,0 +1,26 @@
+.blog #info .container, .challenge #cta .container, .challenge #cta-2 .container
+{padding-bottom: 3.5rem;}
+
+.blog header
+{background:url('../assets/img/landing-img.png') no-repeat center center;height:45vh;position:relative;width:100%;background-size:cover;padding:0;}
+
+.blog .padding
+{padding-top:3.5rem;}
+
+.blog div.blog-content
+{padding-bottom:3.5rem;}
+
+.blog .card
+{margin-bottom:3rem;}
+
+.blog .card:last-child
+{margin-bottom:0;}
+
+
+@media (min-width: 992px) {
+.blog header
+{background:url('../assets/img/landing-img.png') no-repeat center center fixed;}
+
+.blog .card .card-img
+{height:22rem;}
+}
